@@ -1,0 +1,204 @@
+html,
+body {
+	overflow-x: hidden;
+}
+
+body {
+	background-image: url("t1zkz8rvxah91.webp");
+	position: relative;
+	background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
+}
+
+.toplogo a {
+	height: 10%;
+}
+
+.maindiv {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(19, 25, 63);
+	border-style: groove;
+	border-width: 1mm 0mm;
+	border-color: gainsboro;
+}
+
+.maindiv div {
+	color: white;
+}
+
+.garage {
+	display: flex;
+	justify-content: start;
+	padding-left: 3cm;
+	font-size: 3cm;
+	font-family: "Times New Roman", Times, serif;
+	width: 100%;
+}
+
+.garage h1 {
+	float: left;
+	color: aliceblue;
+	text-shadow: black 0px 0px 2px;
+	padding: 5mm 5mm;
+	text-decoration: underline;
+}
+
+.garage h1:hover {
+	color: rgb(76, 46, 100);
+}
+
+.mainnav {
+	background-color: rgb(0, 0, 0);
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	width: 100%;
+	margin: 0cm;
+}
+
+.topnav {
+	display: flex;
+}
+
+.mainnav ul li {
+	text-decoration: none;
+	justify-content: center;
+	align-items: center;
+	padding: 2mm 3mm 2mm 3mm;
+}
+
+ul {
+	display: flex;
+	list-style-type: none;
+}
+
+.secondnav {
+	width: auto;
+	padding: 1mm 0mm;
+}
+
+.container-fluid {
+	padding: 0mm;
+}
+
+.mainsplit {
+	display: flex;
+}
+
+.realbox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.95);
+	border-style: ridge;
+	border-width: 1mm 2mm;
+	border-color: grey;
+	padding: 5mm 10mm 5mm 10mm;
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 600px;
+	height: 500px;
+	visibility: hidden;
+}
+
+.realboxtext {
+	color: beige;
+	font-style: italic;
+	text-align: center;
+}
+
+.outerrealbox {
+	height: 75svh;
+	width: 75svh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-bio-data {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.95);
+	border-style: ridge;
+	border-width: 1mm 2mm;
+	border-color: grey;
+	padding: 5mm 10mm 5mm 10mm;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.picture-bio {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.95);
+	border-style: ridge;
+	border-width: 1mm 2mm;
+	border-color: grey;
+	padding: 5mm 10mm 5mm 10mm;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+@keyframes shrink {
+	0% {
+		height: initial;
+		width: initial;
+		overflow-y: hidden;
+	}
+
+	50% {
+		height: 0px;
+		width: 0px;
+		overflow-y: hidden;
+		visibility: hidden;
+	}
+
+	100% {
+		height: initial;
+		width: initial;
+		overflow-y: auto;
+	}
+}
+
+@keyframes spop {
+	0% {
+		height: 0px;
+		width: 0px;
+		overflow-y: hidden;
+		visibility: hidden;
+	}
+
+	100% {
+		height: 500px;
+		width: 400px;
+		overflow-y: hidden;
+	}
+}
+
+.snap {
+	animation-name: shrink;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	color: beige;
+}
+
+.spop {
+	animation: swell 1s forwards;
+}
+
+#container {
+	width: 350px;
+	height: 350px;
+	position: relative;
+}
+
+#animation {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<script src="https://kit.fontawesome.com/4f7f98cca2.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css" />
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Raven's Nest</title>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="mainnav col-12">
+			<ul class="nav justify-content-end row">
+				<li class="nav-item col-4" href="#">
+					<a class="nav-link" href="#"></a>
+				</li>
+				<li class="nav-item col-4">
+					<a class="nav-link" href="#"></a>
+				</li>
+				<li class="nav-item col-4">
+					<a class="nav-link" href="#"></a>
+				</li>
+			</ul>
+		</div>
+		<div class="maindiv">
+			<div class="justify-content-center align-items-center">
+				Love your neighbour, as your father in heaven loves you.
+			</div>
+		</div>
+
+		<ul class="nav secondnav justify-content-center row">
+			<li class="nav-item col-3">
+				<a href="#">
+					<div class="garage" onclick="myMove()">
+						<h1>INDEX</h1>
+					</div>
+				</a>
+			</li>
+
+			<li class="nav-item col-3">
+				<a href="#">
+					<div class="garage" onclick="changeText(abt, about)">
+						<h1>ABOUT</h1>
+					</div>
+				</a>
+			</li>
+			<li class="nav-item col-3">
+				<a href="#">
+					<div class="garage" onclick="changeText(abt, games)">
+						<h1>GAMES</h1>
+					</div>
+				</a>
+			</li>
+			<li class="nav-item col-3">
+				<a href="#">
+					<div class="garage" onclick="changeText(abt, writing)">
+						<h1>WRITING</h1>
+					</div>
+				</a>
+			</li>
+		</ul>
+
+		<div class="mainsplit container">
+
+			<div class="outerbiobox row">
+				<div class="col-6">
+					<h1 class="garage-title">BIO</h1>
+					<div class="main-bio-data">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-6">
+					<h1 class="garage-title"></h1>
+					<div class="picture-bio">
+						<div class="under-box"></div>
+					</div>
+				</div>
+			</div>
+			<div class="realbox justify-content-center text-align-center" id="abt">
+				<span class="realboxtext">
+					This is the real box “Which commandment is the most important of
+					all?” Jesus answered, The most important is, Hear, O Israel: The
+					Lord our God, the Lord is one. And you shall love the Lord your God
+					with all your heart and with all your soul and with all your mind
+					and with all your strength. The second is this: “You shall love your
+					neighbor as yourself.” There is no other commandment greater than
+					these. You shall not oppress your neighbor or rob him. The wages of
+					a hired worker shall not remain with you all night until the
+					morning. You shall not curse the deaf or put a stumbling block
+					before the blind, but you shall fear your God: I am the Lord. You
+					shall do no injustice in court. You shall not be partial to the poor
+					or defer to the great, but in righteousness shall you judge your
+					neighbor. You shall not go around as a slanderer among your people,
+					and you shall not stand up against the life of your neighbor: I am
+					the Lord. You shall not hate your brother in your heart, but you
+					shall reason frankly with your neighbor, lest you incur sin because
+					of him. You shall not take vengeance or bear a grudge against the
+					sons of your own people, but you shall love your neighbor as
+					yourself: I am the Lord.
+				</span>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="app.js"></script>
+
+</html>
