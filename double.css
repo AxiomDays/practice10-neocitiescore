@@ -157,6 +157,36 @@ ul {
 	background-color: rgb(223, 90, 0)
 }
 
+.mobilelist {
+	padding: 0;
+	width: 60vh;
+}
+
+.mobilelist li {
+	border: 10px solid grey;
+	border-image: url(9-AC1-8001.png) 5 / 9.5px stretch;
+	background-color: rgba(0, 0, 0, 0.95);
+	padding: 1.5mm 1mm 1.5mm 1mm;
+	margin: 0.1mm;
+	font-size: 0.5cm;
+	color: whitesmoke;
+	line-height: 80%;
+	width: auto;
+	display: flex;
+	font-family: "Trident", sans-serif;
+	justify-content: space-between;
+
+}
+
+.mobilelist li:hover {
+	transition: 0.3s;
+	background-color: rgb(223, 90, 0)
+}
+
+.mobilelist li:target {
+	background-color: rgb(223, 90, 0)
+}
+
 
 
 .bioheader {
@@ -202,14 +232,20 @@ ul {
 	overflow-x: hidden;
 }
 
+@media only screen and (max-width: 850px) {
+	.displayval {
+		padding: 0.5em 1.85em;
+	}
+}
+
 .uverdisplaybox {
-	height: 80vh;
+	height: 75vh;
 	width: 60vh;
 }
 
 .nineball {
 	height: 75%;
-	width: 90%;
+	width: 80%;
 }
 
 .statusbox {
@@ -238,11 +274,65 @@ ul {
 
 .linkmenu {}
 
-.linkmenu li {
-	text-decoration: none;
-	line-height: 140%;
+.linkmenu li a {
+	text-decoration: underline;
+	text-decoration-color: rgb(223, 90, 0);
+	line-height: 200%;
 	padding: 2mm 0mm;
+	color: white;
+	text-align: center;
+}
 
+.linkmenu li a:hover {
+	background-color: rgb(223, 90, 0);
+	transition-duration: 0.7s;
+}
+
+.mjkImage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 5%;
+}
+
+.mjkImage img {
+	border: 5px groove rgb(77, 74, 75);
+	border-image: url(9-AC1-8001.png) 5 / 9.5px repeat;
+	height: 40%;
+	width: 70%;
+}
+
+.mjkBtnRow img:hover {}
+
+.mjkBtnRow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 10%;
+}
+
+.mjkTitleDiv {
+	display: flex;
+	justify-content: center;
+}
+
+.mjkTitle {
+	width: 80%;
+}
+
+.mjkMeter {
+	display: flex;
+	align-items: center;
+	margin: 5%;
+	background-color: grey;
+	width: 90%;
+}
+
+.mjkBar {
+	width: 0%;
+	padding: 0;
+	height: 5px;
+	background-color: rgb(223, 90, 0);
 }
 
 @font-face {
