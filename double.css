@@ -300,6 +300,7 @@ ul {
 	border-image: url(9-AC1-8001.png) 5 / 9.5px repeat;
 	height: 40%;
 	width: 70%;
+	aspect-ratio: 4/3;
 }
 
 .mjkBtnRow img:hover {}

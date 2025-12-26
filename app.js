@@ -18,24 +18,48 @@ let timer;
 
 const mujikData = {
 	0: {
-		track_name: "PIRIRI",
-		track_image: "assets\\2UXc1HW.jpg",
+		track_name: "Strike the Iron",
+		track_image: "tracks\\D3.png",
 		track_duration: 1,
-		track_path: "Digital Text 1.mp3",
+		track_path: "tracks\\D3.mp3",
 	},
 
 	1: {
-		track_name: "Nonon Jakuzure",
-		track_image: "tracks\\Nonon.jpg",
+		track_name: "Soul Palpitation",
+		track_image: "tracks\\D4.png",
 		track_duration: 1,
-		track_path: "tracks\\Nonon.mp3",
+		track_path: "tracks\\D4-Comp.mp3",
 	},
 
 	2: {
-		track_name: "Let's Get It On",
-		track_image: "tracks\\SF3.png",
+		track_name: "Daimaou's Throne",
+		track_image: "tracks\\D5.png",
 		track_duration: 1,
-		track_path: "tracks\\SF3.mp3",
+		track_path: "tracks\\D5-Fin.mp3",
+	},
+	3: {
+		track_name: "Narrow Minded",
+		track_image: "tracks\\D6.png",
+		track_duration: 1,
+		track_path: "tracks\\D6.mp3",
+	},
+	4: {
+		track_name: "Creeping Bullseye",
+		track_image: "tracks\\D7.png",
+		track_duration: 1,
+		track_path: "tracks\\D7-Fin.mp3",
+	},
+	5: {
+		track_name: "Final Confrontation",
+		track_image: "tracks\\D8.png",
+		track_duration: 1,
+		track_path: "tracks\\D8-Retune.mp3",
+	},
+	6: {
+		track_name: "Heaven's Embrace",
+		track_image: "tracks\\D9.png",
+		track_duration: 1,
+		track_path: "tracks\\D9-Hev.mp3",
 	},
 };
 
@@ -57,7 +81,7 @@ const index = [
 	`”The second is this: “You shall love your neighbor as yourself.” There is no other commandment greater than these.”`,
 	`Hi, I'm Axiom. This is a cute little page I made for my amusement.
 	I believe that honesty and compromise are the most important aspects of any relationship.
-	If you care, you can look on to find stories I've written or games I've made.`,
+	If you care, you can look on to find music I've composed, stories I've written or games I've made.`,
 	`And if you're reading this, then know that I love you. Yes, YOU reading this.`,
 ];
 const wartime = [
@@ -146,7 +170,7 @@ const lonk = [
 	`<ul class="linkmenu row">
 	<li> - <a href="https://pokedex-react-nine-rose.vercel.app/"  target="_blank">MINI POKEDEX PROJECT</a></li> <li> - <a href="https://axiom-days.itch.io/unnamed-katana"  target="_blank">TEXT-BASED SHELL RPG</a></li> <li> - <a
         href="https://docs.google.com/document/d/1Mo9v1-dDOIWNLYjAHT5zp84ecpPVWa_JPDcKa5WtfEg/edit?usp=sharing"  target="_blank"> DARK
-        FANTASY EXCERPT I HOPE TO CONTINUE ONE DAY</a></li> <li> - <a href="https://backloggd.com/u/Axiom/"  target="_blank">MY BACKLOGGD</a></li> <li> - <a href="https://github.com/AxiomDays"  target="_blank">MY GITHUB</a></li></ul>`,
+        FANTASY EXCERPT I HOPE TO CONTINUE ONE DAY</a></li> <li> - <a href="https://backloggd.com/u/Axiom/"  target="_blank">MY BACKLOGGD</a></li> <li> - <a href="#"  target="_blank">MY GITHUB</a></li></ul>`,
 ];
 
 const core = `<img src="nineball-armored-core.gif" class="nineball" alt="" srcset="">`;
@@ -369,7 +393,7 @@ const etrian = [
 
 const mujikBar = [
 	`<div class="mjkImage">
-                            <img src="assets\\9-AC1-8.png" id="mjkImage" alt="" srcset="">
+                            <img src="amalie-steiness.gif" id="mjkImage" alt="" srcset="">
                         </div>
 
                         <div class="row mjkBtnRow mt-2">
@@ -424,9 +448,13 @@ const mujikList = [
 			<div class="row">
 				<span class="subjectheader col-4">SUBJECT</span>
 			</div>
-				<li class="col-10" onclick="mujikChangeDiv(0);"><span>PIRIRI</span> </li>
-				<li class="col-10" onclick="mujikChangeDiv(1);"><span>Nonon</span> </li>
-				<li class="col-10" onclick="mujikChangeDiv(2);"><span>Get It On</span> </li>
+				<li class="col-10" onclick="mujikChangeDiv(0);"><span>${mujikData[0]["track_name"]}</span> </li>
+				<li class="col-10" onclick="mujikChangeDiv(1);"><span>${mujikData[1]["track_name"]}</span> </li>
+				<li class="col-10" onclick="mujikChangeDiv(2);"><span>${mujikData[2]["track_name"]}</span> </li>
+				<li class="col-10" onclick="mujikChangeDiv(3);"><span>${mujikData[3]["track_name"]}</span> </li>
+				<li class="col-10" onclick="mujikChangeDiv(4);"><span>${mujikData[4]["track_name"]}</span> </li>
+				<li class="col-10" onclick="mujikChangeDiv(5);"><span>${mujikData[5]["track_name"]}</span> </li>
+				<li class="col-10" onclick="mujikChangeDiv(6);"><span>${mujikData[6]["track_name"]}</span> </li>
 		</ul>`,
 ];
 
