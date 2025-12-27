@@ -19,76 +19,77 @@
     <title>Ravens' Nest</title>
 </head>
 
-<!-- <body onload="changeDiv('abt', robot)"> -->
+<body onload="changeDiv('abt', robot)">
 
-<audio loop id="textnoise">
-    <source src="Digital Text 1.mp3" type="audio/mp3">
-</audio>
+    <audio loop id="textnoise">
+        <source src="Digital Text 1.mp3" type="audio/mp3">
+    </audio>
 
-<audio id="mujikMusic">
-    <source id="mujikSrc" src="" type="audio/mp3">
-</audio>
+    <audio id="mujikMusic">
+        <source id="mujikSrc" src="" type="audio/mp3">
+    </audio>
 
-<div class="container-fluid justify-content-center">
-    <div class="mainnav col-12">
-        <ul class="nav justify-content-end row">
-            <li class="nav-item col-4" href="#">
-                <a class="nav-link" href="#"></a>
-            </li>
-            <li class="nav-item col-4">
-                <a class="nav-link" href="#"></a>
-            </li>
-            <li class="nav-item col-4">
-                <a class="nav-link" href="#"></a>
-            </li>
-        </ul>
-    </div>
-    <div class="maindiv">
-        <div class="justify-content-center align-items-center" id="stinger">
-            God is in his Heaven. All is right with the world.
+    <div class="container-fluid justify-content-center">
+        <div class="mainnav col-12">
+            <ul class="nav justify-content-end row">
+                <li class="nav-item col-4" href="#">
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item col-4">
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item col-4">
+                    <a class="nav-link" href="#"></a>
+                </li>
+            </ul>
         </div>
-    </div>
-    <div class="row">
-        <div class="uverdiv">
-            <div class="selectdiv d-lg-flex d-none col-4">
-
-                <ul class="selectlist row">
-                    <h1 class="bioheader col-8">GARAGE</h1>
-                    <li class="col-10" onclick="changeDiv('abt', robot)">PREVIEW</li>
-                    <li class="col-10" onclick="changeText('abt', index)">ABOUT</li>
-                    <li class=" col-10" onclick="changeDiv('abt', writeList)">WRITING</li>
-                    <li class=" col-10" onclick="changeDiv('abt', fictionList)">FICTION</li>
-                    <li class=" col-10" onclick="changeDiv('abt', mujikList)">MUSIC</li>
-                    <li class=" col-10" onclick="changeDiv('abt', lonk)">LINKS</li>
-                </ul>
+        <div class="maindiv">
+            <div class="justify-content-center align-items-center" id="stinger">
+                God is in his Heaven. All is right with the world.
             </div>
+        </div>
+        <div class="row">
+            <div class="uverdiv">
+                <div class="selectdiv d-lg-flex d-none col-4">
 
-            <div class="tempbox">
-                <div class="uverdisplaybox">
-                    <div class="displayval col-4" id="abt">
-
-                    </div>
-                </div>
-                <div class="selectdiv col-12 d-lg-none d-flex" style="padding-top: 0; margin-top: 0;">
-                    <ul class="mobilelist row justify-content-center">
-                        <li class="col-10" onclick="changeDiv('abt', robot)"><i class="fa-solid fa-eye"></i>
-                        </li>
-                        <li class="col-10" onclick="changeText('abt', index)"><i class="fa-solid fa-address-card"></i>
-                        </li>
-                        <li class=" col-10" onclick="changeDiv('abt', writeList)"><i class="fa-solid fa-pen"></i>
-                        </li>
-                        <li class=" col-10" onclick="changeDiv('abt', fictionList)"><i
-                                class="fa-solid fa-book-journal-whills"></i></li>
-                        <li class=" col-10" onclick="changeDiv('abt', mujikList)"><i class="fa-solid fa-music"></i>
-                        </li>
-                        <li class=" col-10" onclick="changeDiv('abt', lonk)"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></li>
+                    <ul class="selectlist row">
+                        <h1 class="bioheader col-8">GARAGE</h1>
+                        <li class="col-10" onclick="changeDiv('abt', robot)">PREVIEW</li>
+                        <li class="col-10" onclick="changeText('abt', index)">ABOUT</li>
+                        <li class=" col-10" onclick="changeDiv('abt', writeList)">WRITING</li>
+                        <li class=" col-10" onclick="changeDiv('abt', fictionList)">FICTION</li>
+                        <li class=" col-10" onclick="changeDiv('abt', mujikList)">MUSIC</li>
+                        <li class=" col-10" onclick="changeDiv('abt', lonk)">LINKS</li>
                     </ul>
                 </div>
+
+                <div class="tempbox">
+                    <div class="uverdisplaybox">
+                        <div class="displayval col-4" id="abt">
+
+                        </div>
+                    </div>
+                    <div class="selectdiv col-12 d-lg-none d-flex" style="padding-top: 0; margin-top: 0;">
+                        <ul class="mobilelist row justify-content-center">
+                            <li class="col-10" onclick="changeDiv('abt', robot)"><i class="fa-solid fa-eye"></i>
+                            </li>
+                            <li class="col-10" onclick="changeText('abt', index)"><i
+                                    class="fa-solid fa-address-card"></i>
+                            </li>
+                            <li class=" col-10" onclick="changeDiv('abt', writeList)"><i class="fa-solid fa-pen"></i>
+                            </li>
+                            <li class=" col-10" onclick="changeDiv('abt', fictionList)"><i
+                                    class="fa-solid fa-book-journal-whills"></i></li>
+                            <li class=" col-10" onclick="changeDiv('abt', mujikList)"><i class="fa-solid fa-music"></i>
+                            </li>
+                            <li class=" col-10" onclick="changeDiv('abt', lonk)"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </body>
 <script src="app.js"></script>
 
